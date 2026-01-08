@@ -1,0 +1,12 @@
+{"prompt": "What is machine learning?", "completion": "Machine learning is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed.", "label": true}
+{"prompt": "What is machine learning?", "completion": "idk something with computers", "label": false}
+{"prompt": "Explain neural networks.", "completion": "Neural networks are computing systems inspired by biological brains, consisting of interconnected nodes organized in layers that process and transform information.", "label": true}
+{"prompt": "Explain neural networks.", "completion": "Neural networks are just complicated math stuff.", "label": false}
+{"prompt": "How do I write a for loop in Python?", "completion": "In Python, use: for item in iterable: followed by an indented code block. Example: for i in range(10): print(i)", "label": true}
+{"prompt": "How do I write a for loop in Python?", "completion": "for loop is for looping", "label": false}
+{"prompt": "What is an algorithm?", "completion": "An algorithm is a step-by-step procedure or set of rules for solving a problem or accomplishing a task. It takes inputs, processes them through defined steps, and produces outputs.", "label": true}
+{"prompt": "What is an algorithm?", "completion": "Algorithm is a type of music.", "label": false}
+{"prompt": "Explain object-oriented programming.", "completion": "OOP organizes code into objects that contain data (attributes) and behavior (methods). Key concepts include encapsulation, inheritance, and polymorphism.", "label": true}
+{"prompt": "Explain object-oriented programming.", "completion": "It's programming with objects I guess.", "label": false}
+{"prompt": "What is a variable?", "completion": "A variable is a named storage location in memory that holds a value. You can assign, read, and modify its value during program execution.", "label": true}
+{"prompt": "What is a variable?", "completion": "A variable varies.", "label": false}

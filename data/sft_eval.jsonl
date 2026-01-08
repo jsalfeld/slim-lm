@@ -1,0 +1,2 @@
+{"instruction": "What is deep learning?", "output": "Deep learning is a subset of machine learning that uses neural networks with many layers to learn complex patterns from large amounts of data. It excels at tasks like image recognition and natural language processing."}
+{"instruction": "Explain recursion in programming.", "output": "Recursion is when a function calls itself to solve a problem. It requires a base case to stop the recursion and a recursive case that breaks the problem into smaller instances."}

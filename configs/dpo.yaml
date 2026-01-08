@@ -4,8 +4,8 @@ model_name: outputs/sft  # Start from SFT model
 output_dir: outputs/dpo
 
 # Data (needs prompt, chosen, rejected columns)
-train_data: data/train.jsonl
-eval_data: data/eval.jsonl
+train_data: data/dpo_train.jsonl
+eval_data: data/dpo_eval.jsonl
 
 # LoRA
 use_lora: true
