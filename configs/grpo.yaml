@@ -1,0 +1,40 @@
+# GRPO Configuration (Group Relative Policy Optimization)
+# Uses reward model scores instead of just preferences
+method: grpo
+model_name: meta-llama/Llama-3.1-8B
+output_dir: outputs/grpo
+
+# Data (needs prompt column, generates completions online)
+train_data: data/train.jsonl
+eval_data: data/eval.jsonl
+
+# LoRA
+use_lora: true
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+
+# Quantization
+use_qlora: true
+
+# GRPO specific
+num_generations: 4  # Number of completions to generate per prompt
+beta: 0.1  # KL penalty coefficient
+
+# Training
+num_epochs: 1
+batch_size: 2
+gradient_accumulation_steps: 8
+learning_rate: 5.0e-6
+max_seq_length: 2048
+max_prompt_length: 1024
+warmup_ratio: 0.1
+
+# Generation
+max_new_tokens: 256
+temperature: 0.7
+
+# Logging
+logging_steps: 10
+save_steps: 100
+eval_steps: 100

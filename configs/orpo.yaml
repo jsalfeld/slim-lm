@@ -1,0 +1,34 @@
+# ORPO Configuration (combines SFT + preference in one stage)
+method: orpo
+model_name: meta-llama/Llama-3.1-8B
+output_dir: outputs/orpo
+
+# Data (needs prompt, chosen, rejected columns)
+train_data: data/train.jsonl
+eval_data: data/eval.jsonl
+
+# LoRA
+use_lora: true
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+
+# Quantization
+use_qlora: true
+
+# ORPO specific
+beta: 0.1  # Weight for odds ratio loss
+
+# Training
+num_epochs: 2
+batch_size: 2
+gradient_accumulation_steps: 8
+learning_rate: 8.0e-6
+max_seq_length: 2048
+max_prompt_length: 1024
+warmup_ratio: 0.1
+
+# Logging
+logging_steps: 10
+save_steps: 100
+eval_steps: 100
